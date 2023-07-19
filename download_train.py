@@ -38,7 +38,8 @@ def download_and_resize(imList):
                 print('Good: ' + savePath)
             else:
                 print('Already saved: ' + savePath)
-        except:
+        except Exception as error:
+            print(error)
             print('Bad: ' + savePath)
 
 def main():
